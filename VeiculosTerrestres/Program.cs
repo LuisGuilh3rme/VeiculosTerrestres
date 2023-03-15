@@ -1,11 +1,10 @@
-﻿using VeiculosTerrestres;
+﻿using VeiculosTerrestres.Veiculo;
 
-VeiculoTerrestre carro = new(4, 200.00, "Branca", "Carro");
-VeiculoTerrestre moto = new(2, 200.00, "Vermelha", "Moto");
-VeiculoTerrestre bicicleta = new(2, 40.00, "Preta", "Bicicleta");
-VeiculoTerrestre onibus = new(4, 140.00, "Azul", "Onibus");
-VeiculoTerrestre tanque = new(6, 100.00, "Verde Musgo", "Tanque");
-
+Carro carro = new(4, 150.00, "Azul", 4);
+Moto moto = new(4, 150.00, "Azul");
+Bicicleta bicicleta = new(2, 40.00, "Preta", 10);
+Onibus onibus = new(4, 100.00, "Azul", 16);
+Tanque tanque = new(6, 120.00, "Verde musgo", 6);
 
 Console.WriteLine(carro);
 Console.WriteLine(moto);

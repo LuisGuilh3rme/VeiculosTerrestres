@@ -9,17 +9,21 @@ namespace VeiculosTerrestres
         public string Cor { get; set; }
         public string Categoria { get; set; }
 
-        public VeiculoTerrestre(int rodas, double velocidadeMaxima, string cor, string categoria)
+        public VeiculoTerrestre(int rodas, double velocidadeMaxima, string cor)
         {
             Rodas = rodas;
             VelocidadeMaxima = velocidadeMaxima;
             Cor = cor;
-            Categoria = categoria;
         }
 
         public override string ToString()
         {
-            return $"{Categoria} {Cor}, possuindo {Rodas} rodas, velocidade máxima {VelocidadeMaxima} KM/h";
+            return $"{Categoria} {Cor}, possuindo {Rodas} rodas, velocidade máxima {VelocidadeMaxima} KM/h, {Diferencial()}";
+        }
+
+        public virtual string Diferencial()
+        {
+            return "";
         }
     }
 }
